@@ -143,8 +143,8 @@ if (contactForm) {
         }
 
         emailjs.send(
-            'service_15gh468',    // Replace with your EmailJS service ID
-            'template_mmtnahq',   // Replace with your EmailJS template ID
+            'service_cgidhr8',    // Replace with your EmailJS service ID
+            'template_c7p6wbs',   // Replace with your EmailJS template ID
             data
         ).then(() => {
             alert('Message sent successfully! ✉️');
