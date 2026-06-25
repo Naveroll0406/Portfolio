@@ -839,10 +839,9 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    padding: 160px 0 80px 0;
     display: flex;
     align-items: center;
-    padding-top: 80px;
     background-color: var(--color-background);
     position: relative;
     overflow: hidden;
