@@ -5,20 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naveen Mamidala - AI Engineer Portfolio</title>
-    <link rel="stylesheet" href="style.css?v=1.1">
+    <meta name="description"
+        content="Naveen Mamidala — AI Engineer building LLM, RAG and agentic AI systems with LangChain, LangGraph and FastAPI.">
+    <meta name="theme-color" content="#08090d">
+    <link rel="stylesheet" href="style.css?v=2.3">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+    <!-- Ambient background -->
+    <div class="ambience" aria-hidden="true">
+        <div class="grid-lines"></div>
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+        <div class="grain"></div>
+    </div>
+
+    <!-- Scroll progress -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="#home">Naveen Mamidala</a>
             </div>
-            <div class="nav-menu">
+            <div class="nav-menu" id="navMenu">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
@@ -26,11 +43,12 @@
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="hamburger">
+            <button class="hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+                aria-controls="navMenu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -58,8 +76,9 @@
                     </div>
                 </div>
                 <div class="hero-text">
-                    <h1>Hi, I'm Naveen Mamidala</h1>
-                    <h2>AI Engineer | LLM & RAG Systems | Agentic AI </h2>
+                    <h1><span class="gradient-text">Naveen Mamidala</span></h1>
+                    <h2 data-typewriter="AI Engineer | LLM &amp; RAG Systems | Agentic AI">AI Engineer | LLM &amp; RAG
+                        Systems | Agentic AI</h2>
                     <p>Passionate about building AI-driven applications that bridge language and logic. Experienced in
                         developing intelligent retrieval systems, agent-based architectures, and scalable backend
                         services using modern LLM frameworks, vector databases, and machine learning technologies.
@@ -70,12 +89,14 @@
                         <a href="#projects" class="btn btn-secondary">View Projects</a>
                     </div>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/naveen-mamidala-4849b526b/" target="_blank"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/Naveroll0406" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="mailto:naveenmamidala07@gmail.com"><i class="fas fa-envelope"></i></a>
-                        <a href="https://www.instagram.com/naveroll_07/" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/naveen-mamidala-4849b526b/" target="_blank"
+                            rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Naveroll0406" target="_blank" rel="noopener"
+                            aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="mailto:naveenmamidala07@gmail.com" aria-label="Email"><i
+                                class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/naveroll_07/" target="_blank" rel="noopener"
+                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -97,18 +118,18 @@
                     <div class="achievements">
                         <div class="achievement">
                             <div class="achievement-number">5</div>
-                            <div class="achievement-text">LLM Apps and Agents Deployed<br>Built using LangChain,
-                                LangGraph & FastAPI with custom logic.</div>
+                            <div class="achievement-text"><strong>LLM Apps and Agents Deployed</strong>Built using
+                                LangChain, LangGraph & FastAPI with custom logic.</div>
                         </div>
                         <div class="achievement">
                             <div class="achievement-number">90%</div>
-                            <div class="achievement-text">RAG Efficiency<br>Improved response quality via better
-                                retrieval</div>
+                            <div class="achievement-text"><strong>RAG Efficiency</strong>Improved response quality via
+                                better retrieval</div>
                         </div>
                         <div class="achievement">
                             <div class="achievement-number">100%</div>
-                            <div class="achievement-text">API Integration<br>Seamless LLM, vector DB & UI workflows
-                            </div>
+                            <div class="achievement-text"><strong>API Integration</strong>Seamless LLM, vector DB & UI
+                                workflows</div>
                         </div>
 
                     </div>
@@ -498,8 +519,8 @@
                             <i class="fab fa-github"></i>
                             <div>
                                 <h4>GitHub</h4>
-                                <a href="https://github.com/Naveroll0406"
-                                    target="_blank">https://github.com/Naveroll0406</a>
+                                <a href="https://github.com/Naveroll0406" target="_blank"
+                                    rel="noopener">github.com/Naveroll0406</a>
                             </div>
                         </div>
                     </div>
@@ -520,6 +541,7 @@
                             <textarea name="message" placeholder="Message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
                     </form>
 
                 </div>
@@ -536,31 +558,34 @@
                     <p>Passionate about transforming data into actionable insights</p>
                 </div>
                 <div class="footer-social">
-                    <a href="https://www.linkedin.com/in/naveen-mamidala-4849b526b" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Naveroll0406" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="mailto:naveenmamidala07@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.instagram.com/naveroll_07/" target="_blank"><i
-                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/naveen-mamidala-4849b526b" target="_blank" rel="noopener"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Naveroll0406" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="mailto:naveenmamidala07@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/naveroll_07/" target="_blank" rel="noopener"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- Scroll to Top Button -->
-    <button id="scrollToTop" class="scroll-to-top">
+    <button id="scrollToTop" class="scroll-to-top" type="button" aria-label="Scroll back to top">
         <i class="fas fa-chevron-up"></i>
     </button>
-
-    <script src="app.js"></script>
 
     <!-- === EmailJS SDK === -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            emailjs.init('6gqb6bFKYTSmuarH4');  // Replace with your EmailJS public key
+            if (typeof emailjs !== 'undefined') {
+                emailjs.init('6gqb6bFKYTSmuarH4');  // EmailJS public key
+            }
         });
     </script>
+
+    <script src="app.js?v=2.0"></script>
 </body>
 
 </html>
