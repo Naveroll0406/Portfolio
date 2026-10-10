@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Naveen Mamidala - AI Engineer Portfolio</title>
+    <meta name="description"
+        content="Naveen Mamidala, AI Engineer building LLM, RAG and agentic AI systems with LangChain, LangGraph and FastAPI.">
+    <meta name="theme-color" content="#08090d">
+    <link rel="stylesheet" href="style.css?v=2.3">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Ambient background -->
+    <div class="ambience" aria-hidden="true">
+        <div class="grid-lines"></div>
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+        <div class="grain"></div>
+    </div>
+
+    <!-- Scroll progress -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Naveen Mamidala</a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+                aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-frame">
+                            <img src="Naveen.jpg" alt="Naveen Mamidala" class="profile-img">
+                            <div class="profile-overlay">
+                                <div class="overlay-content">
+                                    <p>AI Engineer</p>
+                                    <p>Data Scientist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-icons">
+                            <div class="tech-icon python"><i class="fab fa-python"></i></div>
+                            <div class="tech-icon ai"><i class="fas fa-brain"></i></div>
+                            <div class="tech-icon data"><i class="fas fa-chart-line"></i></div>
+                            <div class="tech-icon ml"><i class="fas fa-robot"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1><span class="gradient-text">Naveen Mamidala</span></h1>
+                    <h2 data-typewriter="AI Engineer | LLM &amp; RAG Systems | Agentic AI">AI Engineer | LLM &amp; RAG
+                        Systems | Agentic AI</h2>
+                    <p>AI Engineer building production-grade LLM systems, from advanced RAG pipelines and LangGraph
+                        agent workflows to real-time voice assistants. I've shipped a LiveKit voice agent that books
+                        hospital appointments through natural conversation, a LangChain agent that automates end-to-end
+                        GitHub repository setup, and retrieval chatbots grounded in FAISS and ChromaDB. I work across
+                        the full path: Playwright scraping and FastAPI services, evaluation with RAGAS and LangSmith,
+                        and deployment on Railway, Vercel, and Docker.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/naveen-mamidala-4849b526b/" target="_blank"
+                            rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Naveroll0406" target="_blank" rel="noopener"
+                            aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="mailto:naveenmamidala07@gmail.com" aria-label="Email"><i
+                                class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/naveroll_07/" target="_blank" rel="noopener"
+                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I’m an AI Engineer with hands-on experience in demand forecasting, LLM systems, and the backend services around
+                        them. At Neuzen AI, I work on NADEC demand forecasting, combining SAP sales data, lag and rolling-sales features,
+                        and LightGBM to support inventory planning. At Neuramonks I built a LangChain agent that automates end-to-end GitHub repository setup,
+                        and a RAG chatbot for Smart Vision Systems using Qwen2.5-7B with FAISS vector indexing,
+                        reducing hallucinations by grounding answers in curated documentation. At E2M Solutions I built
+                        an AI website audit system that scrapes landing pages with Playwright, scores Core Web Vitals
+                        through the PageSpeed Insights API, and uses LLM-powered competitor analysis to surface
+                        messaging gaps and optimization opportunities. B.Tech in Artificial Intelligence and Machine
+                        Learning from P P Savani University.</p>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <div class="achievement-number">5</div>
+                            <div class="achievement-text"><strong>LLM Apps and Agents Deployed</strong>Built using
+                                LangChain, LangGraph & FastAPI with custom logic.</div>
+                        </div>
+                        <div class="achievement">
+                            <div class="achievement-number">90%</div>
+                            <div class="achievement-text"><strong>RAG Efficiency</strong>Improved response quality via
+                                better retrieval</div>
+                        </div>
+                        <div class="achievement">
+                            <div class="achievement-number">100%</div>
+                            <div class="achievement-text"><strong>API Integration</strong>Seamless LLM, vector DB & UI
+                                workflows</div>
+                        </div>
+
+                    </div>
+
+                    <div class="certifications">
+                        <h3>Certifications</h3>
+                        <div class="cert-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Data Science Internship Certificate - upGrad</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Experience</h3>
+                        <p>1 year</p>
+                        <span>Professional AI Engineer</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>Projects</h3>
+                        <p>6 Featured</p>
+                        <span>AI/ML & Data Science Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                        <p>Class of 2024</p>
+                        <span>B.Tech Artificial Intelligence and Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> AI</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">LLMs</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">Fine Tuning LLMs</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">LangGraph</span>
+                        <span class="skill-tag">LangSmith</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Agentic AI</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-spider"></i> Web Scraping & API</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Selenium</span>
+                        <span class="skill-tag">BeautifulSoup</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">FastAPI</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases & Storage</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Pinecone</span>
+                        <span class="skill-tag">ChromaDB</span>
+                        <span class="skill-tag">FAISS</span>
+                        <span class="skill-tag">Supabase</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Railway</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Deepgram</span>
+                        <span class="skill-tag">Cartesia</span>
+                        <span class="skill-tag">Vercel</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-eye"></i> Specialized Skills</h3>
+                    <div class="skill-items">
+
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">CUDA</span>
+                        <span class="skill-tag">Ollama</span>
+                        <span class="skill-tag">Livekit</span>
+                        <span class="skill-tag">RAGAS</span>
+
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-line"></i> Forecasting &amp; Data Science</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">LightGBM</span>
+                        <span class="skill-tag">XGBoost</span>
+                        <span class="skill-tag">Time-Series Forecasting</span>
+                        <span class="skill-tag">Random Forest</span>
+                        <span class="skill-tag">Linear Regression</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Feature Engineering</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud &amp; MLOps</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Azure ML Studio</span>
+                        <span class="skill-tag">Azure ML Portal</span>
+                        <span class="skill-tag">Azure Data Lake</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>ML Engineer</h3>
+                            <span class="company">Neuzen AI - Hyderabad, Telangana, IN</span>
+                            <span class="duration">Jul 2026 – Present</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Built a <strong>customer allocation tab</strong> to plan SKU quantities dispatched from each van to each customer over <strong>7-day and 14-day horizons</strong>, supported by forecasts with low WMAPE.</li>
+                            <li>Developed <strong>LightGBM demand forecasts across 1,051 SKUs</strong> at van × SKU × day level, achieving low WMAPE across both forecasting horizons.</li>
+                            <li>Generated <strong>weekly sales projections for the next 36 months</strong> to support longer-term demand planning.</li>
+                            <li>Validated <strong>9 Azure Data Lake tables</strong> covering <strong>44.7M+ sales rows</strong> and <strong>3.8M promotional records</strong>.</li>
+                            <li>Automated <strong>SalesPro–SAP customer mapping</strong> and data integrity checks to reconcile source records.</li>
+                            <li>Established a <strong>98.5% invoice match</strong> between SalesPro and SAP.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Python</span><span>LightGBM</span><span>Pandas</span>
+                            <span>Azure Data Lake</span><span>SAP</span>
+                            <span>Time-Series Forecasting</span><span>Data Validation</span><span>WMAPE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Associate AI Executor</h3>
+                            <span class="company">E2M Solutions - Ahmedabad, IN</span>
+                            <span class="duration">Dec 2025 – Feb 2026</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Developed an AI-driven <strong>Landing Page Roaster</strong> to evaluate performance, UX
+                                structure, SEO health, and conversion effectiveness across real-world business websites
+                            </li>
+
+                            <li>Built dynamic web scraping pipelines using <strong>Playwright</strong> to extract CTAs,
+                                headlines, forms, social proof, trust elements, and structural metadata</li>
+
+                            <li>Integrated <strong>Google PageSpeed Insights API</strong> and custom performance modules
+                                to analyze Core Web Vitals, mobile responsiveness, and technical health</li>
+
+                            <li>Implemented LLM-powered competitor identification and messaging analysis to detect
+                                positioning gaps and generate structured, actionable optimization recommendations</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Playwright</span>
+                            <span>LLMs</span>
+                            <span>FastAPI</span>
+                            <span>PageSpeed API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>AI Engineer</h3>
+                            <span class="company">Neuramonks - Ahmedabad, IN</span>
+                            <span class="duration">May 2025</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Developed a modular RAG chatbot framework using <strong>LangChain</strong>, enabling
+                                context-aware document retrieval and response generation</li>
+                            <li>Built multi-agent LLM workflows with <strong>LangGraph</strong>, automating complex task
+                                flows through agent collaboration and state transitions</li>
+                            <li>Deployed secure, production-ready <strong>FastAPI</strong> services for real-time LLM
+                                chat and query handling</li>
+                            <li>Automated end-to-end GitHub project deployment using LLM-driven dependency detection and
+                                environment setup logic</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>LangChain</span>
+                            <span>LangGraph</span>
+                            <span>FastAPI</span>
+                            <span>Streamlit</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>AI Engineer Intern</h3>
+                            <span class="company">Neuramonks - Ahemdabad, IN</span>
+                            <span class="duration">Nov 2024 – Apr 2025</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Contributed to building RAG-based LLM systems using <strong>LangChain</strong> and
+                                <strong>ChromaDB</strong> for knowledge retrieval and query resolution
+                            </li>
+                            <li>Collaborated on internal tools for embedding generation, context chunking, and vector
+                                storage optimization</li>
+                            <li>Tested and fine-tuned prompt templates to improve LLM accuracy across varied use cases
+                            </li>
+
+                        </ul>
+                        <div class="tech-stack">
+                            <span>LangChain</span>
+                            <span>RAG</span>
+                            <span>Model Deployment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fas fa-chart-line"></i> NADEC Demand Forecasting</h3>
+                    </div>
+                    <p>A demand forecasting and customer allocation system developed at Neuzen AI for NADEC.
+                        Uses LightGBM to forecast demand across 1,051 SKUs at van × SKU × day level,
+                        helping plan dispatch quantities from each van to each customer over 7-day and 14-day
+                        horizons with low WMAPE. Also generates weekly sales projections for the next 36 months.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>LightGBM</span><span>Pandas</span>
+                        <span>Azure Data Lake</span><span>SAP</span><span>WMAPE</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature"><i class="fas fa-check"></i> Customer Allocation for 7-Day &amp; 14-Day Horizons</div>
+                        <div class="feature"><i class="fas fa-check"></i> 1,051 SKUs Forecast at Van × SKU × Day Level</div>
+                        <div class="feature"><i class="fas fa-check"></i> 36-Month Weekly Sales Projections</div>
+                        <div class="feature"><i class="fas fa-check"></i> 9 Tables Validated: 44.7M+ Sales &amp; 3.8M Promo Records</div>
+                        <div class="feature"><i class="fas fa-check"></i> Automated SalesPro–SAP Mapping &amp; Integrity Checks</div>
+                        <div class="feature"><i class="fas fa-check"></i> 98.5% Invoice Match Between SalesPro &amp; SAP</div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fas fa-microphone-alt"></i> Lisa – Real-Time Voice AI</h3>
+                        <div class="project-links">
+                            <a href="https://www.loom.com/share/5ed707394867420088ebe322a2c79f06" target="_blank"
+                                title="Video Demo"><i class="fas fa-video"></i></a>
+                            <a href="https://github.com/Naveroll0406/lisa-voice-agent-backend" target="_blank"
+                                title="Backend Repo (Frontend also available)"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p>A full-stack real-time voice AI hospital assistant capable of booking and managing appointments
+                        through natural voice interactions using function/tool calling.</p>
+                    <div class="project-tech">
+                        <span>LiveKit</span>
+                        <span>Deepgram</span>
+                        <span>Cartesia</span>
+                        <span>OpenRouter</span>
+                        <span>Railway</span>
+                        <span>Vercel</span>
+                        <span>FastAPI</span>
+                        <span>Next.js</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature"><i class="fas fa-check"></i> Real-time Voice Conversations</div>
+                        <div class="feature"><i class="fas fa-check"></i> Autonomous Appointment Booking</div>
+                        <div class="feature"><i class="fas fa-check"></i> Function/Tool Calling</div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fas fa-newspaper"></i> Github Repo Setup Agent</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Naveroll0406/Gitsnap" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p>LLM-powered agent that automates GitHub project setup by analyzing repo structure, identifying
+                        dependencies, and preparing environment files with minimal manual effort.</p>
+                    <div class="project-tech">
+                        <span>Streamlit</span>
+                        <span>FastAPI</span>
+                        <span>Git</span>
+                        <span>LangChain</span>
+                        <span></span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature"><i class="fas fa-check"></i> LLM Code Understanding</div>
+                        <div class="feature"><i class="fas fa-check"></i> Minimal Manual Effort</div>
+                        <div class="feature"><i class="fas fa-check"></i>Repo Structure Detection</div>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fas fa-running"></i> Changi Airport Chatbot</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Naveroll0406/Changi-Airport-Chatbot" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p>An open-source RAG chatbot using Mistral LLM, LangChain, and ChromaDB to answer queries from
+                        web-scraped Changi content in real time.</p>
+                    <div class="project-tech">
+                        <span>LangChain</span>
+                        <span>LLM: Mistral</span>
+                        <span>ChromaDB </span>
+                        <span>Python </span>
+                        <span>FastAPI </span>
+                        <span>Streamlit</span>
+                        <span>Hugging Face</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature"><i class="fas fa-check"></i> Mistral-Powered Retrieval</div>
+                        <div class="feature"><i class="fas fa-check"></i> Web Data Integration</div>
+                        <div class="feature"><i class="fas fa-check"></i> Real-Time Chat</div>
+                    </div>
+                </div>
+
+
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fas fa-user-friends"></i> Reddit User Persona Generator</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Naveroll0406/reddit-user-persona" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p>Designed a Python-based pipeline that scrapes and analyzes Reddit user activity to generate
+                        detailed behavioral personas using LLMs and advanced NLP techniques.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>PRAW</span>
+                        <span>Ollama</span>
+                        <span>LLM</span>
+                        <span>NLP</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature"><i class="fas fa-check"></i> Automated data scraping</div>
+                        <div class="feature"><i class="fas fa-check"></i> Local LLM integration</div>
+                        <div class="feature"><i class="fas fa-check"></i> Behavioral analysis</div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3><i class="fas fa-chart-line"></i> Retail Demand Forecasting</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Naveroll0406/Demand-Forecasting" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p>An end-to-end machine learning pipeline for forecasting retail demand, utilizing XGBoost, Random Forest, and Linear Regression with Optuna-tuned hyperparameter optimization.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>XGBoost</span>
+                        <span>Random Forest</span>
+                        <span>Optuna</span>
+                        <span>Machine Learning</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature"><i class="fas fa-check"></i> Multi-Model Comparison</div>
+                        <div class="feature"><i class="fas fa-check"></i> Hyperparameter Tuning</div>
+                        <div class="feature"><i class="fas fa-check"></i> Time-Series Forecasting</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm currently seeking new opportunities in Data Science, AI Research, and MLOps. Feel free to
+                        reach out for collaborations, consultations, or just to connect!</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:naveenmamidala07@gmail.com">naveenmamidala07@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+916305974144">+91 6351233200</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/naveen-mamidala-4849b526b/"
+                                    target="_blank">linkedin.com/in/naveen-mamidala</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/Naveroll0406" target="_blank"
+                                    rel="noopener">github.com/Naveroll0406</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="from_name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="from_email" placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Naveen Mamidala. All rights reserved.</p>
+                    <p>Passionate about transforming data into actionable insights</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/naveen-mamidala-4849b526b" target="_blank" rel="noopener"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Naveroll0406" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="mailto:naveenmamidala07@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/naveroll_07/" target="_blank" rel="noopener"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" type="button" aria-label="Scroll back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- === EmailJS SDK === -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof emailjs !== 'undefined') {
+                emailjs.init('6gqb6bFKYTSmuarH4');  // EmailJS public key
+            }
+        });
+    </script>
+
+    <script src="app.js?v=2.0"></script>
+</body>
+
+</html>
